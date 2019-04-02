@@ -21,3 +21,9 @@ steps:
     
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: 'MyAzureServiceConnection'
+    WebAppName: 'HackerRank'
+    Package: $(System.ArtifactsDirectory)/**/*.zip
