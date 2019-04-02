@@ -25,5 +25,5 @@ steps:
 - task: AzureRmWebAppDeployment@3
   inputs:
     azureSubscription: 'MyAzureServiceConnection'
-    WebAppName: 'HackerRank'
+    WebAppName: 'MDHackerRank-PipelineTest'
     Package: $(System.ArtifactsDirectory)/**/*.zip
