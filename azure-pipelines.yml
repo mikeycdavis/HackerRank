@@ -4,13 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- develop
+- master
 
 pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  buildConfiguration: 'Develop'
+  buildConfiguration: 'Master'
 
 steps:
 - task: NuGetToolInstaller@0
