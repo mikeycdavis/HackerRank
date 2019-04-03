@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  buildConfiguration: 'Master'
+  buildConfiguration: 'Release'
 
 steps:
 - task: NuGetToolInstaller@0
